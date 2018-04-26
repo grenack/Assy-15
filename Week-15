@@ -1,0 +1,32 @@
+#!/bin/bash
+
+
+#update and install git 
+
+Sudo apt-get update
+
+sudo apt-get install git 
+
+#Clone from repository to directory 
+
+git clone https://github.com/BestSolution-at/fixtar.git
+
+#Install the requisites
+
+sudo apt-get install make
+
+sudo apt-get install gcc
+
+sudo apt-get install flex
+
+sudo apt-get install sed
+
+sudo apt-get install coreutils
+ 
+#change directory to fixtar/src
+
+cd fixtar/src
+
+#install the tool in /usr/local/bin
+
+sudo make install
